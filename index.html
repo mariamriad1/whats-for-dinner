@@ -1,0 +1,340 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>What's For Dinner</title>
+    <link rel="icon" href="images/restaurant.png" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <!-- link bootstrap css -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <!-- link main style -->
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- link media query -->
+    <link rel="stylesheet" href="css/media.css" />
+  </head>
+
+  <body>
+    <!-- nav-start -->
+    <nav id="nav" class="navbar navbar-expand-lg bg-body-light p-3 fixed-top">
+      <div class="container">
+        <div class="left d-flex align-items-center">
+          <div class="nav-icon px-3">
+            <div
+              id="nav-icon"
+              class="d-flex align-items-center justify-content-center rounded-circle shadow"
+            >
+              <i
+                class="fa-solid fa-utensils fs-5"
+                style="color: rgb(255, 255, 255)"
+              ></i>
+            </div>
+          </div>
+          <div class="d-flex flex-column lh-1">
+            <a class="navbar-brand fw-bold fs-4 m-0" href="#"
+              >What's For Dinner</a
+            >
+            <span class="icon-span text-body-secondary"
+              >Your daily meal inspiration</span
+            >
+          </div>
+        </div>
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0 fs-5">
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                <i class="fa-solid fa-bookmark"></i>
+                <span class="nav-text ms-2">Saved Recipes</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                <i class="fa-solid fa-clock-rotate-left"></i>
+                <span class="nav-text ms-2">Recent</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                <i class="fa-solid fa-gear"></i>
+                <span class="nav-text ms-2">Settings</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link d-flex align-items-center" href="#">
+                <div id="user-img">
+                  <img src="images/user.jpg" alt="user" />
+                </div>
+                <span class="nav-text ms-2">Profile</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- nav-end -->
+
+    <!-- recipe start -->
+    <div id="recipe-card" class="recipe container rounded-5 col-sm-4 col-md-8 col-lg-9 m-auto">
+      <div class="card shadow border-0">
+        <div class="row g-0 h-100">
+          
+<div class="col-md-4 position-relative">
+  <img
+    id="recipe-image"
+    src="images/margherita-pizza-recipe.jpg"
+    class="img-fluid h-100 w-100"
+    style="object-fit: cover"
+    alt="Recipe"
+  />
+
+  <div class="position-absolute top-0 start-0 p-3">
+    <span class="badge bg-light text-dark rounded-pill shadow-sm p-3">
+      <i class="fa-solid fa-star text-warning"></i>
+      <span id="rating">4.9</span>
+      <small id="reviews" class="text-muted">(512 reviews)</small>
+    </span>
+  </div>
+
+  <div class="position-absolute bottom-0 start-0 w-100 p-3">
+    <div
+      class="bg-white rounded-3 shadow-sm p-2 d-flex justify-content-around text-center fs-5"
+    >
+      <div>
+        <i
+          class="fa-solid fa-clock"
+          style="color: rgb(236, 111, 27)"
+        ></i>
+        <br />
+        <small id="time" class="text-secondary">90 min</small>
+      </div>
+
+      <div>
+        <i
+          class="fa-solid fa-fire-burner"
+          style="color: rgb(236, 27, 40)"
+        ></i>
+        <br />
+        <small id="time2" class="text-secondary">12 min</small>
+      </div>
+
+      <div>
+        <i class="fa-solid fa-users text-primary"></i>
+        <br />
+        <small id="people" class="text-secondary">2 people</small>
+      </div>
+    </div>
+  </div>
+</div>
+          <div class="col-md-8 d-flex flex-column h-100">
+            <div class="card-body overflow-y-auto">
+              <div class="d-flex justify-content-between align-items-start">
+                <div>
+                  <span id="badge1" class="badge badge1 rounded-pill p-2"
+                    >Intermediate</span
+                  >
+                  <span id="badge2" class="badge badge2 rounded-pill p-2">Italian</span>
+                  <h2 id="recipe" class="mt-2 py-3">Margherita Pizza</h2>
+                </div>
+                <div class="d-flex justify-content-between">
+                  <div class="d-flex justify-content-end gap-2 mb-2">
+                    <button class="btn btn-light rounded-4 p-2 icon-hover">
+                      <i class="fa-solid fa-bookmark"></i>
+                    </button>
+
+                    <button class="btn btn-light rounded-4 p-2 icon-hover">
+                      <i class="fa-solid fa-share-nodes"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <p id="recipe_desc" class="card-text">
+                This is a wider card with supporting text below as a natural
+                lead-in to additional content. This content is a little bit
+                longer.
+              </p>
+             <div
+  id="prep-box"
+  class="prep-time alert d-flex align-items-center"
+  role="alert"
+>
+  <i
+    class="fa-solid fa-triangle-exclamation me-3 fs-4"
+    style="color: rgb(236, 27, 40)"
+  ></i>
+
+  <div>
+    <strong>Extended Preparation Time</strong>
+
+    <p
+      id="Extended_Preparation_Time"
+      style="color: rgb(194, 21, 32)"
+    >
+      This recipe requires more than 45 minutes to prepare.
+    </p>
+  </div>
+</div>
+              <ul
+                class="nav nav-underline nav-justified align-items-center"
+                id="recipeTabs"
+                role="tablist"
+              >
+                <li class="nav-item">
+                  <a
+                    class="nav-link active d-flex justify-content-center align-items-center gap-2"
+                    data-bs-toggle="tab"
+                    href="#ingredients"
+                  >
+                    <i class="fa-solid fa-list-ul"></i> Ingredients
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link d-flex justify-content-center align-items-center gap-2"
+                    data-bs-toggle="tab"
+                    href="#instructions"
+                  >
+                    <i class="fa-solid fa-book-open"></i> Instructions
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link d-flex justify-content-center align-items-center gap-2"
+                    data-bs-toggle="tab"
+                    href="#nutrition"
+                  >
+                    <i class="fa-solid fa-chart-pie"></i> Nutrition
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link d-flex justify-content-center align-items-center gap-2"
+                    data-bs-toggle="tab"
+                    href="#tips"
+                  >
+                    <i class="fa-solid fa-lightbulb"></i> Chef's Tips
+                  </a>
+                </li>
+              </ul>
+
+              <div class="tab-content mt-3" id="recipeTabContent">
+                <div class="tab-pane fade show active" id="ingredients">
+                  <div class="container-fluid">
+                    <div class="ingredients container">
+                      
+                    </div>
+                  </div>
+                </div>
+                <div class="tab-pane fade" id="instructions">
+                  <div class="instructions container">
+                   
+                  </div>
+                </div>
+                <div class="tab-pane fade" id="nutrition">
+                  <div class="nutrition-grid">
+                    <div class="nutri-box">
+                      <div class="icon-box" style="background-color: #fff3e0">
+                        <i
+                          class="fa-solid fa-fire"
+                          style="color: rgb(247, 124, 42)"
+                        ></i>
+                      </div>
+                      <span class="label">Calories</span>
+<span id="calories" class="value">420 kcal</span>
+                    </div>
+
+                    <div class="nutri-box">
+                      <div class="icon-box" style="background-color: #e3f2fd">
+                        <i
+                          class="fa-solid fa-dumbbell"
+                          style="color: rgb(8, 82, 141)"
+                        ></i>
+                      </div>
+                      <span class="label">Protein</span>
+<span id="protein" class="value">26g</span>
+                    </div>
+
+                    <div class="nutri-box">
+                      <div class="icon-box" style="background-color: #fff9c4">
+                        <i
+                          class="fa-solid fa-wheat-awn"
+                          style="color: rgb(175, 156, 36)"
+                        ></i>
+                      </div>
+                      <span class="label">Carbohydrates</span>
+<span id="carbs" class="value">22g</span>
+                    </div>
+
+                    <div class="nutri-box">
+                      <div class="icon-box" style="background-color: #ffebee">
+                        <i
+                          class="fa-solid fa-droplet"
+                          style="color: rgb(231, 40, 40)"
+                        ></i>
+                      </div>
+                      <span class="label">Fat</span>
+<span id="fat" class="value">26g</span>
+                    </div>
+
+                    <div class="nutri-box">
+                      <div class="icon-box" style="background-color: #e8f5e9">
+                        <i
+                          class="fa-solid fa-seedling"
+                          style="color: rgb(38, 98, 46)"
+                        ></i>
+                      </div>
+                      <span class="label">Fiber</span>
+<span id="fiber" class="value">5g</span>
+                    </div>
+
+                    <div class="nutri-box">
+                      <div class="icon-box" style="background-color: #fce4ec">
+                        <i
+                          class="fa-solid fa-cube"
+                          style="color: rgb(233, 37, 163)"
+                        ></i>
+                      </div>
+                      <span class="label">Sodium</span>
+<span id="sodium" class="value">890mg</span>                    </div>
+                  </div>
+                </div>
+                <div class="tab-pane fade" id="tips">
+  <div id="tips-container"></div>
+</div>
+              </div>
+             <div class="recipe-container">
+  <button id="try-another" class="btn  rounded-3 text-white bottom-btn">
+    <i class="fa-solid fa-rotate"></i> Try Another Recipe
+  </button>
+</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- recipe end -->
+
+    <!-- bootstrap js -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,57 @@
+@media screen and (min-width: 768px) {
+  .navbar-nav {
+    display: flex !important;
+    flex-direction: row !important;
+    justify-content: flex-end !important;
+    align-items: center !important;
+  }
+  .nav-text {
+    display: none;
+  }
+  .card {
+    height: 700px !important;
+    margin-bottom: 32px;
+    overflow: hidden;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .navbar-nav {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: flex-start !important;
+  }
+  .nav-link {
+    justify-content: flex-start !important;
+  }
+  .recipe {
+    width: 90% !important;
+  }
+
+  .card {
+    height: auto !important;
+  }
+
+  #recipe-image {
+    height: 280px;
+    object-fit: cover;
+  }
+
+  .nutrition-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .bottom-btn {
+    width: 90%;
+  }
+
+  .instruction,
+  .ingredient {
+    align-items: flex-start;
+    margin: auto;
+  }
+
+  .nav-underline {
+    flex-wrap: wrap;
+  }
+}
